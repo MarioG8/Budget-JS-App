@@ -147,6 +147,10 @@ input[type="number"] {
   margin-left: 10px;
 }
 
+.active {
+  opacity: 1 !important;
+}
+
 .focus {
   opacity: 1 !important;
 }

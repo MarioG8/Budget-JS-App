@@ -18,12 +18,12 @@ const allBtn = document.querySelector('.tab3');
 
 // Select Inputs 
 const addExpense = document.querySelector('.add-expense');
-const expenseTitle = document.qetElementById('expense-title-input');
-const expenseAmount = document.qetElementById('expense-amount-input');
+const expenseTitle = document.getElementById('expense-title-input');
+const expenseAmount = document.getElementById('expense-amount-input');
 
 const addIncome = document.querySelector('.add-expense');
-const incomeTitle = document.qetElementById('expense-title-input');
-const incomeAmount = document.qetElementById('expense-amount-input');
+const incomeTitle = document.getElementById('expense-title-input');
+const incomeAmount = document.getElementById('expense-amount-input');
 
 // Variables 
 let ENTRY_LIST = [];
@@ -50,3 +50,26 @@ allBtn.addEventListener('click', () => {
     active(allBtn);
     inactive([incomeBtn, expenseBtn]);
 });
+
+// Sho/Hide Active/Inactive 
+
+function show(element) {
+    element.classList.remove('hide');
+}
+
+function hide(elements) {
+    elements.forEach(element => {
+        element.classList.add('hide');
+    });
+}
+
+
+function active(element) {
+    element.classList.add('active');
+}
+
+function inactive(elements) {
+    elements.forEach(element => {
+        element.classList.remove('active');
+    });
+}

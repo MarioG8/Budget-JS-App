@@ -12,7 +12,7 @@
 <body>
     <div class="budget-container">
         <div class="app-title">
-            <a href="#">Mario<b>Budget</b></a>
+            <a href="">Code<b>Explained</b></a>
         </div>
         <div class="budget-header">
             <div class="balance">
@@ -35,7 +35,7 @@
                 <div class="chart"></div>
                 <div class="outcome">
                     <div class="title">
-                        Outcome
+                        Income
                     </div>
                     <div class="outcome-total">
                         <small>$</small>0
@@ -55,7 +55,7 @@
                 <div class="input">
                     <input type="text" id="income-title-input" name="title" placeholder="Title">
                     <input type="number" id="income-amount-input" name="amount" placeholder="$0">
-                    <div class="add-expense"><img src="icon/plus.png" alt=""></div>
+                    <div class="add-income"><img src="icon/plus.png" alt=""></div>
                 </div>
             </div>
             <div class="hide" id="expense">
@@ -66,10 +66,11 @@
                     <div class="add-expense"><img src="icon/plus.png" alt=""></div>
                 </div>
             </div>
-            <div class="all"></div>
+            <div id="all">
+                <ul class="list"></ul>
+            </div>
         </div>
     </div>
-
 
     <script src="main.js"></script>
     <script src="chart.js"></script>
