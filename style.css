@@ -37,7 +37,10 @@ input[type="number"] {
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  background-color: #24700c;
+  background-image: url("icon/usd.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 6px;
 }
 
@@ -47,7 +50,7 @@ input[type="number"] {
 }
 
 .budget-container .app-title a {
-  color: rgb(218, 233, 10);
+  color: rgb(228, 188, 11);
   font-family: "Kaushan Script", cursive;
   font-size: 1.5rem;
 }
@@ -65,13 +68,14 @@ input[type="number"] {
 }
 
 .budget-header .balance .title {
-  color: #fff;
+  color: rgb(228, 188, 11);
   font-size: 1em;
+  font-weight: bold;
   font-family: "Montserrat Bold";
 }
 
 .budget-header .balance .value {
-  color: #fff;
+  color: rgb(228, 188, 11);
   font-size: 2em;
   margin-top: 10px;
   font-family: "Montserrat Bold";
@@ -95,20 +99,20 @@ input[type="number"] {
 }
 
 .budget-header .account .income .title {
-  color: #fff;
-  opacity: 0.5;
+  color: rgb(228, 188, 11);
+  /* opacity: 0.5; */
 }
 .budget-header .account .income .income-total {
-  color: #fff;
+  color: rgb(228, 188, 11);
   font-family: "Montserrat Bold";
 }
 
 .budget-header .account .outcome .title {
-  color: #fff;
-  opacity: 0.5;
+  color: rgb(228, 188, 11);
+  /* opacity: 0.5; */
 }
 .budget-header .account .outcome .outcome-total {
-  color: #f0624d;
+  color: #ec0606;
   font-family: "Montserrat Bold";
 }
 
@@ -116,8 +120,9 @@ input[type="number"] {
 .budget-dashboard {
   display: block;
   width: 360px;
-  height: 470px;
+  height: 450px;
   background-color: #fff;
+  opacity: 0.8;
   margin-top: 35px;
   border-radius: 10px;
 }
